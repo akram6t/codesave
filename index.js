@@ -33,8 +33,8 @@ app.get("/apis/users", (req, res) => {
 // app.get('/*', (req, res) => res.sendFile(path.join(__dirname, './public/index.html')));
 
 app.use(express.static("./client"));
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname + './client', 'index.html'));
-})
+app.get("*", (req, res) => {
+  res.json("hellow worolds");
+});
 
 app.use('/api', router);
