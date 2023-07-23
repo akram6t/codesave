@@ -1,0 +1,1 @@
+vl={baseUrl:"https://codesave.vercel.app/api/Ms334ddsMMsdoaMCEO3256ks",getUsers:`getusers`,getUser:"getuser",createUser:"createuser",updateUser:"updateuser",deleteUser:"deleteuser",getPosts:"getposts",getPost:"getpost",createPost:"createpost",updatePost:"updatepost",deletePost:"deletepost"};
