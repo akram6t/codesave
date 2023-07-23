@@ -19,6 +19,14 @@ server.listen(port, () => {
     console.log('server listen on port: ' + port);
 });
 
+app.get("/users", (req, res) => {
+  res.send({message: "user triggered"});
+});
+
+app.get("/apis/users", (req, res) => {
+  res.send({message: "user triggered"});
+});
+
 app.use(express.static(path.join(__dirname, './public')));
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, './public/index.html')));
