@@ -32,9 +32,9 @@ app.get("/apis/users", (req, res) => {
 
 // app.get('/*', (req, res) => res.sendFile(path.join(__dirname, './public/index.html')));
 
-app.use(express.static("client"));
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/client/index.html"));
+app.use(express.static(__dirname + "./client"));
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname + "./client/index.html"));
 });
 
 app.use('/api', router);
