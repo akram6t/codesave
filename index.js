@@ -9,7 +9,7 @@ const router = require('./api/routes');
 
 app.use(cors(
   {
-    origin: '*',
+    origin: ['*'],
     methods: ["POST", "GET"]
   }
 ));
