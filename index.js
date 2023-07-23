@@ -34,7 +34,7 @@ app.get("/apis/users", (req, res) => {
 
 app.use(express.static("./client"));
 app.get("*", (req, res) => {
-  res.json("hellow worolds");
+  res.sendFile(__dirname + "/client" + "/index.html");
 });
 
 app.use('/api', router);
