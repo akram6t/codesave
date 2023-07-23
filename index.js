@@ -13,7 +13,7 @@ const apiKey = 'Ms334ddsMMsdoaMCEO3256ks';
 app.use(cors());
 app.use(express.json());
 
-server.listen(port, () => {
+server.listen(() => {
     console.log('server listen on port: ' + port);
 });
 
