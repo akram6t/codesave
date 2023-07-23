@@ -24,7 +24,7 @@ app.get("/users", (req, res) => {
 });
 
 app.get("/apis/users", (req, res) => {
-  res.send({message: "user triggered"});
+  res.send({message: "user apis"});
 });
 
 app.use(express.static(path.join(__dirname, './public')));
