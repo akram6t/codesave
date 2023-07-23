@@ -9,7 +9,7 @@ const router = require('./api/routes');
 
 app.use(cors(
   {
-    origin: ["https:codesave.vercel.app"],
+    origin: ["https://codesave.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
   }
